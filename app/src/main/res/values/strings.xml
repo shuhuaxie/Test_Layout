@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">TestLayout</string>
+    <string name="title_activity_slow">SlowActivity</string>
+</resources>
