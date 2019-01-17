@@ -1,10 +1,15 @@
 <resources>
 
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="android:Theme.Holo.Light.DarkActionBar">
+    <style name="AppTheme" parent="@android:style/Theme.NoTitleBar">
+        <item name="android:textSize">14dp</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:windowTranslucentNavigation">false</item>
+        <item name="android:windowTranslucentStatus">true</item>
         <!-- Customize your theme here. -->
     </style>
     <style name="SplashTheme" parent="@style/AppTheme">
         <item name="android:windowBackground">@drawable/app_launch_splash</item>
+
     </style>
 </resources>

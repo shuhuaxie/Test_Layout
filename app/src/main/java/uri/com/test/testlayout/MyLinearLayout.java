@@ -10,7 +10,7 @@ import android.widget.LinearLayout;
 
 
 public class MyLinearLayout extends LinearLayout {
-    String TAG = "MyLinearLayout:" + getTag();
+    String TAG = "MyLinearLayout_" + (getTag() == null ? "" : getTag()) + ":";
 
     public MyLinearLayout(Context context) {
         super(context);
@@ -39,6 +39,10 @@ public class MyLinearLayout extends LinearLayout {
     @Override
     protected void onMeasure(int widthSpec, int heightSpec) {
         Log.e("xie", TAG + "onMeasure start:" + (System.currentTimeMillis() - LiveApp.initTime));
+        Log.e("xie", TAG + "width size:" + MeasureSpec.getSize(widthSpec));
+        Log.e("xie", TAG + "height size:" + MeasureSpec.getSize(heightSpec));
+        Log.e("xie", TAG + "width model:" + (MeasureSpec.getMode(widthSpec)>>30));
+        Log.e("xie", TAG + "height model:" + (MeasureSpec.getMode(heightSpec)>>30));
         super.onMeasure(widthSpec, heightSpec);
         Log.e("xie", TAG + "onMeasure end:" + (System.currentTimeMillis() - LiveApp.initTime));
     }
@@ -50,27 +54,9 @@ public class MyLinearLayout extends LinearLayout {
 
 
     @Override
-    public void addView(View child) {
-        super.addView(child);
-        Log.e("xie", TAG + "addView");
-    }
-
-    @Override
     public void addView(View child, int index, ViewGroup.LayoutParams params) {
         super.addView(child, index, params);
-        Log.e("xie", TAG + "addView 3");
+        Log.e("xie", TAG + "addView:" + child.getTag() + ":" + child.getClass().getSimpleName());
     }
 
-    @Override
-    protected boolean addViewInLayout(View child, int index, ViewGroup.LayoutParams params) {
-        Log.e("xie", TAG + "addViewInLayout 3");
-        return super.addViewInLayout(child, index, params);
-    }
-
-    @Override
-    protected boolean addViewInLayout(View child, int index, ViewGroup.LayoutParams params,
-                                      boolean preventRequestLayout) {
-        Log.e("xie", TAG + "addViewInLayout 4");
-        return super.addViewInLayout(child, index, params, preventRequestLayout);
-    }
 }

@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="uri.com.test.testlayout">
-    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
     <application
         android:name=".LiveApp"
         android:allowBackup="true"
@@ -21,7 +23,10 @@
         </activity>
         <activity
             android:name=".SlowActivity"
-            android:label="@string/title_activity_slow"></activity>
+            android:label="@string/title_activity_slow" />
+        <activity
+            android:name=".WrapTestAct"
+            android:label="@string/title_activity_wrap_test"></activity>
     </application>
 
 </manifest>

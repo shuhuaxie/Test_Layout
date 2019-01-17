@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">TestLayout</string>
     <string name="title_activity_slow">SlowActivity</string>
+    <string name="title_activity_wrap_test">WrapTestAct</string>
+    <string name="long_text">long Text ..............................................................................................................</string>
+    <string name="small_text">small Text </string>
 </resources>

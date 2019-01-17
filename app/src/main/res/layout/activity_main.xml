@@ -9,10 +9,17 @@
     tools:context=".MainActivity">
 
     <uri.com.test.testlayout.MyTextView
-        android:id="@+id/my_tv"
+        android:id="@+id/slow_tv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="前往一个很慢的页面"
         android:textColor="#ff0000"
-        android:textSize="15dp" />
+         />
+    <uri.com.test.testlayout.MyTextView
+        android:id="@+id/wrap_test_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="前往TestWrap页面"
+        android:textColor="#ff0000"
+         />
 </uri.com.test.testlayout.MyLinearLayout>

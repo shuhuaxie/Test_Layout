@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<uri.com.test.testlayout.MyConstrainLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:tag="top_ll"
+    tools:context=".MainActivity">
+
+    <!--
+    <uri.com.test.testlayout.MyLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:tag="middle_ll"
+        tools:context=".MainActivity">
+
+        <uri.com.test.testlayout.MyTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:tag="short text"
+            android:text="short Text"
+            android:textColor="#ff0000" />
+
+        <uri.com.test.testlayout.MyLinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:tag="second_ll"
+            tools:context=".MainActivity">
+
+            <uri.com.test.testlayout.MyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:tag="long text"
+                android:text="@string/small_text"
+                android:textColor="#ff0000" />
+        </uri.com.test.testlayout.MyLinearLayout>
+    </uri.com.test.testlayout.MyLinearLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/show_pic" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="如上图所示结构: 构建过程\n A -> B -> (A add B) -> C -> D -> (C add D) -> (A add C)" />
+        -->
+</uri.com.test.testlayout.MyConstrainLayout>
